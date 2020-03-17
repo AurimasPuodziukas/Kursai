@@ -8,12 +8,25 @@ namespace Kursai
         {
             
             int test = Max(3, 6, 9);
-            Console.WriteLine(test);
+            Console.WriteLine("Bigest number: " + test);
+            bool test2 = IsInRange(50, 20, 70);
+            Console.WriteLine(test2);
 
 
             Console.ReadKey();
 
             
+        }
+        static bool IsInRange(int testNumber, int min, int max)
+        {
+            if (testNumber>=min && testNumber <= max)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         static int Max(int number1, int number2, int number3)
